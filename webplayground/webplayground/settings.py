@@ -129,7 +129,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
 # auth redirect
-LOGIN_REDIRECT_URL = "pages:pages"
+#LOGIN_REDIRECT_URL = "pages:pages"
 LOGOUT_REDIRECT_URL = "home"
 
 
@@ -139,4 +139,8 @@ if DEBUG:
     EMAIL_FILE_PATH = os.path.join(BASE_DIR,"sent_emails")
 else:
     pass
-    
+
+
+# Media Files
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,"media")
